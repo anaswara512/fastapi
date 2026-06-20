@@ -5,7 +5,7 @@ class Student(Base):
     __tablename__ = "students"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    email = Column(String, unique=True, index=True)
-    mobile = Column(Integer)
-    place = Column(String)
+    name = Column(String(100), index=True)
+    email = Column(String(100), unique=True, index=True)
+    mobile = Column(String(15))
+    place = Column(String(100))

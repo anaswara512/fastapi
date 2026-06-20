@@ -4,7 +4,7 @@ class StudentSchema(BaseModel):
     id: int
     name: str
     email: str
-    mobile: int
+    mobile: str
     place: str
 
     class Config:
